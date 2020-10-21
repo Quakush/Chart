@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="chart">
+        <h1 class="chart__title">Популярность языков программирования</h1>
+
+        <form class="chart__data" action="#" method="POST">
+            <div class="chart__input-group">
+                <label class="chart__label" for="javascript">Javascript</label>
+                <input class="chart__input input-field" type="number" name="javascript" id="javascript" min="0" max="100" required>
+                <span>%</span>
+            </div>
+            <div class="chart__input-group">
+                <label class="chart__label" for="php">PHP</label>
+                <input class="chart__input input-field" type="number" name="php" id="php" min="0" max="100" required>
+                <span>%</span>
+            </div>
+            <div class="chart__input-group">
+                <label class="chart__label" for="python">Python</label>
+                <input class="chart__input input-field" type="number" name="python" id="python" min="0" max="100" required>
+                <span>%</span>
+            </div>
+            <button class="chart__submit-button" type="submit">Показать график</button>
+        </form>
+
+        <div class="chart__canvas-wrapper">
+            <canvas id="canvas" width="500" height="250">
+                Брайзер не поддерживает Canvas
+            </canvas>
+        </div>
+        
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
